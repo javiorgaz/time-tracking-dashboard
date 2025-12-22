@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, minmax(150px, 220px));
+  grid-template-rows: 200px 200px;
+  gap: 20px;
+  border: 2px dashed red;
+  max-width: 1200px;
+  margin: 180px auto;
+}
+.grid-item {
+  color: white;
+}
+
+
+.long {
+  position: relative;
+  grid-row: 1 / 3;
+}
+
+.long__top {
+  position: absolute;
+  display: hidden;
+  height: 70%;
+  padding: 20px;
+  border-radius: 0 0 15px 15px;
+  background-color: #5746EA;
+}
+
+.img-container {
+  margin-bottom: 30px;
+}
+
+.top__text {
+  font-size: 0.7rem;
+}
+.top__heading {
+  font-weight: 400;
+}
+
+.img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 3px solid white;
+  /* box-shadow: 0 0 0 4px white; */
+}
+.long__bot {
+  display: flex;
+  flex: 1;
+  padding: 20px 20px 20px 20px;
+  background-color: #1D204B;
+  border: 2px solid red;
+}
+
+nav {
+  display: flex;
+  height: 80px;
+  margin-top: auto;
+}
+
+.long__bot ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style: none;
+}
+li {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.562);
+}
+
+li a {
+  cursor: pointer;
+}
+
+
+/* ITEM  */
+.grid-item {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background-color: #FF8B64;
+  overflow: hidden;
+  border-radius: 15px;
+}
+.grid-item__bottom {
+  position: relative;
+  background-color: #1D204B;
+  margin-top: auto;
+  flex: 0 1 80%;
+  border-radius: 15px 15px 0 0;
+  padding: 20px;
+  z-index: 10;
+}
+.ellipsis {
+  position: absolute;
+  top: 25px;
+  right: 20px;
+}
+.icon {
+  position: absolute;
+  top: -10px;
+  right: 10px;
+}
+
+.main-grid > :nth-child(3){
+  background-color: #56C2E6;
+}
+.main-grid > :nth-child(4){
+  background-color: #FF5E7D;
+}
+.main-grid > :nth-child(5){
+  background-color: #4BCF83;
+}
+.main-grid > :nth-child(6){
+  background-color: #7235D1;
+}
+.main-grid > :nth-child(7){
+  background-color: #F1C75B;
+}
+
+
+.option {
+
+}
+.hours {
+
+}
+.last-week {
+
+}
+
+
+
+
+
+
+body,html {
+  height: 100vh;
+}
+body {
+  background-color: #0D1323;
+  font-family: "Rubik";
+}
+
+@media (max-width : 750px) {
+  .main-grid {
+    justify-content: center;
+    grid-template-columns: 300px;
+    grid-template-rows: repeat(7, 150px);
+    margin: 20px auto;
+  }
+
+  .long {
+    grid-row: auto;
+  }
+}
+
+.active {
+  color: white !important;
+  font-size: 1rem;
+}
