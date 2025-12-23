@@ -173,6 +173,7 @@ body {
     justify-content: center;
     grid-template-columns: minmax(100px, 350px);
     grid-template-rows: repeat(7, 180px);
+    margin: 30px 15px 30px 15px;
   }
   .long {
     grid-row: auto;
